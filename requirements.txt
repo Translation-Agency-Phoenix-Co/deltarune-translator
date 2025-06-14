@@ -1,0 +1,8 @@
+curl-cffi
+wasmtime
+numpy
+googletrans==4.0.0rc1
+legacy-cgi
+pygame
+pyinstaller
+libretranslatepy
