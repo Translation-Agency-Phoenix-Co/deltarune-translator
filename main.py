@@ -369,7 +369,7 @@ main_frame = CTkFrame(des, width=760, height=400, fg_color='#1c1c1c',bg_color='#
 source_file_frame = CTkFrame(main_frame, width=720, height=60, fg_color='#2e2e2e')
 source_file_frame_header = CTkLabel(source_file_frame, text='Source file:', text_color='white', font=('Arial', 15))
 source_file_frame_header.place(x=20,y=1)
-source_file_frame_textbox = CTkEntry(source_file_frame, width=600, height=20, text_color='white', font=('Arial', 17))
+source_file_frame_textbox = CTkEntry(source_file_frame, width=600, height=20, text_color='white', bg_color='#2e2e2e', fg_color="#2e2e2e", font=('Arial', 17))
 source_file_frame_textbox.place(x=10, y=25)
 source_file_frame_button = CTkButton(source_file_frame, text='File', height=30, width=90, text_color='white', bg_color='#1c1c1c', fg_color='#1c1c1c', hover_color='grey', font=('Arial', 15), command=change_source_lang)
 source_file_frame_button.place(x=620, y=25.5)
@@ -377,7 +377,7 @@ source_file_frame_button.place(x=620, y=25.5)
 target_file_frame = CTkFrame(main_frame, width=720, height=60, fg_color='#2e2e2e')
 target_file_frame_header = CTkLabel(target_file_frame, text='Target file:', text_color='white', font=('Arial', 15))
 target_file_frame_header.place(x=20,y=1)
-target_file_frame_textbox = CTkEntry(target_file_frame, width=600, height=20, text_color='white', font=('Arial', 17))
+target_file_frame_textbox = CTkEntry(target_file_frame, width=600, bg_color='#2e2e2e', fg_color="#2e2e2e", height=20, text_color='white', font=('Arial', 17))
 target_file_frame_textbox.place(x=10, y=25)
 target_file_frame_button = CTkButton(target_file_frame, text='File', height=30, width=90, text_color='white', bg_color='#1c1c1c', fg_color='#1c1c1c', hover_color='grey', font=('Arial', 15), command=change_target_lang)
 target_file_frame_button.place(x=620, y=25.5)
@@ -385,23 +385,23 @@ target_file_frame_button.place(x=620, y=25.5)
 source_file_frame.place(x=20, y=20)
 target_file_frame.place(x=20, y=100)
 
-lang_frame = CTkFrame(main_frame, width=350, height=100)
+lang_frame = CTkFrame(main_frame, width=350, height=100, bg_color='#2e2e2e', fg_color="#2e2e2e")
 lang_frame_header = CTkLabel(lang_frame, text='Language', text_color='white', font=('Arial', 15))
 lang_frame_header.place(x=20,y=1)
 
 lang_frame_source_file = CTkLabel(lang_frame, text='Source language:', text_color='white', font=('Arial', 15))
 lang_frame_source_file.place(x=10,y=30)
-lang_frame_source_combo = CTkComboBox(lang_frame, text_color='white', width=190, values=list(LANGUAGES.keys()), variable=StringVar(lang_frame, value='en'), font=('Arial', 15))
+lang_frame_source_combo = CTkComboBox(lang_frame, text_color='white', bg_color='#2e2e2e', fg_color='#2e2e2e', width=190, values=list(LANGUAGES.keys()), variable=StringVar(lang_frame, value='en'), font=('Arial', 15))
 lang_frame_source_combo.place(x=135,y=31)
 
 lang_frame_target_file = CTkLabel(lang_frame, text='Target language:', text_color='white', font=('Arial', 15))
 lang_frame_target_file.place(x=10,y=65)
-lang_frame_target_combo = CTkComboBox(lang_frame, text_color='white', width=190, values=list(LANGUAGES.keys()), variable=StringVar(lang_frame, value='ru'), font=('Arial', 15))
+lang_frame_target_combo = CTkComboBox(lang_frame, text_color='white', bg_color='#2e2e2e', fg_color='#2e2e2e', width=190, values=list(LANGUAGES.keys()), variable=StringVar(lang_frame, value='ru'), font=('Arial', 15))
 lang_frame_target_combo.place(x=135,y=66)
 lang_frame.place(x=20, y=175)
 
 
-tarnslator_frame = CTkFrame(main_frame, width=350, height=100)
+tarnslator_frame = CTkFrame(main_frame, width=350, height=100, bg_color='#2e2e2e', fg_color="#2e2e2e")
 translator_api = IntVar(tarnslator_frame, value=0)
 
 tarnslator_frame_header = CTkLabel(tarnslator_frame, text='Translate API', text_color='white', font=('Arial', 15))
@@ -430,7 +430,7 @@ start_translate_button.place(x=630, y=310)
 
 #Логи
 log_frame = CTkFrame(des, width=760, height=400, fg_color="#3A3838",bg_color="#353535")
-log_textbox = CTkTextbox(log_frame, width=720, height=360, text_color='white', font=('Arial', 20))
+log_textbox = CTkTextbox(log_frame, width=720, height=360, bg_color='#2e2e2e', fg_color="#1c1c1c", text_color='white', font=('Arial', 20))
 log_textbox.place(x=20,y=20)
 
 
@@ -443,7 +443,7 @@ vol_button.place(x=60, y=0)
 
 #Настройка громкости
 setvol_frame = CTkFrame(des, width=760, height=400, fg_color="#3A3838",bg_color="#353535")
-setvol_content = CTkFrame(setvol_frame, width=720, height=360)
+setvol_content = CTkFrame(setvol_frame, width=720, height=360, bg_color='#2e2e2e', fg_color="#1c1c1c")
 setvol_content.place(x=20,y=20)
 
 background_volume_var = IntVar(setvol_content, backsound_volume)

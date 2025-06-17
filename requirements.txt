@@ -6,3 +6,6 @@ legacy-cgi
 pygame
 pyinstaller
 libretranslatepy
+requests
+customtkinter
+xdialog
